@@ -8,7 +8,6 @@ import nltk.stem.snowball
 import string
 
 from nltk import word_tokenize
-# from nltk.corpus import stem
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 
@@ -70,7 +69,9 @@ def webhook():
         response = "Your accessment is undecided"
 
     print(response)
-
     return response
+
+
 if __name__ == '__main__':
     app.run(port=8080, debug=False)
+
